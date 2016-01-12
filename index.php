@@ -30,10 +30,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <table align="center" border="1px" style="border:1px blue solid;">
   <thead style="background-color:#cbcbcb;">
   <tr>
-    <th width="30%">Producto</th>
-    <th width="30%">Precio</th>
-    <th width="20%">Adicionar al carrito</th>
-    <th width="20%">Ver como caso especial</th>
+    <th width="30%">Product</th>
+    <th width="30%">Price (MX)</th>
+    <th width="20%">Add to cart</th>
+    <th width="20%">See this product as One page Shopping Cart</th>
      </tr>
   </thead>
   <tbody>
@@ -41,26 +41,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <td>Product 1</td>
   <td>100</td>
   <td><a href="detalle_producto.php?product=1&price=100">Add to cart</a></td>
-  <td><div align="center"><strong><a href="caso_especial.php?product=1&price=100">Especial</a></strong></div></td>
+  <td><div align="center"><strong><a href="caso_especial.php?product=1&price=100">View</a></strong></div></td>
 
   <tr>
   <td>Product 2</td>
   <td>200</td>
-  <td><a href="detalle_producto.php?product=2&price=200">Add to cart</a></td>
-  <td><div align="center"><strong><a href="caso_especial.php?product=2&price=200">Especial</a></strong></div></td>
+  <td><a href="detalle_producto.php?product=2&price=200">Add</a></td>
+  <td><div align="center"><strong><a href="caso_especial.php?product=2&price=200">View</a></strong></div></td>
   </tr>
 
   <tr>
   <td>Product 3</td>
   <td>300</td>
-  <td><a href="detalle_producto.php?product=3&price=300">Add to cart</a></td>
-  <td><div align="center"><strong><a href="caso_especial.php?product=3&price=300">Especial</a></strong></div></td>
+  <td><a href="detalle_producto.php?product=3&price=300">Add</a></td>
+  <td><div align="center"><strong><a href="caso_especial.php?product=3&price=300">View</a></strong></div></td>
   </tr>
   <tr>
   <td>Product 4</td>
   <td>400</td>
-  <td><a href="detalle_producto.php?product=4&price=400">Add to cart</a></td>
-  <td><div align="center"><strong><a href="caso_especial.php?product=4&price=400">Especial</a></strong></div></td>
+  <td><a href="detalle_producto.php?product=4&price=400">Add</a></td>
+  <td><div align="center"><strong><a href="caso_especial.php?product=4&price=400">View</a></strong></div></td>
   </tr>
 
 
