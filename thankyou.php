@@ -22,8 +22,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TSGSF7');</script>
 <!-- End Google Tag Manager -->
 
- <h1>Gracias por su compra...</h1>
- <th><a href="index.php">Inicio</a></th>
+ <h1>Thanks...</h1>
+ <th><a href="index.php">Go home</a></th>
 
 </body>
 </html>
