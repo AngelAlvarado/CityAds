@@ -27,7 +27,7 @@
 <body>
 <!--@see GTM docs -->
 <script>
-  dataLayer =[{'product_id': '<?php $product->getName()?>'}];
+  dataLayer =[{'product_id': '<?= $product->getName()?>'}];
 </script>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TSGSF7"

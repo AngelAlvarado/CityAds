@@ -3,3 +3,4 @@ error_log
 .DS_Store
 DS_Store
 cgi-bin/
+/nbproject/private/
