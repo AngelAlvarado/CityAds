@@ -46,8 +46,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <h1 align="center">Product Detail</h1>
+<div data-role="page" id="pageone">
+  <div data-role="popup" id="myPanel" data-position="right" >
+    <h2>This is what the CityAds js code looks like</h2>
+    <section>
+      <blockquote>Note this script does not have to be embedded on Checkout, Product detail, nor Checkout and Thank You pages </blockquote>
 
-<table align="center" border="1px" style="border:1px blue solid;">
+
+      <pre><code class="language-js">
+          /* < ! [CDATA[*/
+          // Product detail page
+          var xcnt_product_id = '<?= $product->getName()?>'; // Product ID
+          /* ] ] >*/
+
+          (function(){
+          var xscr = document.createElement( 'script' );
+          var xcntr = escape(document.referrer); xscr.async = true;
+          xscr.src = ( document.location.protocol === 'https:' ? 'https:' : 'http:' ) + '//x.cnt.my/async/track/?r=' + Math.random();
+          var x = document.getElementById( 'xcntmyAsync' ); x.parentNode.insertBefore( xscr, x );
+          }());
+          See instructions on  <a href="#">GTM </a>
+
+        </code></pre>
+
+      <blockquote>Remember to verify in any page if the click_id is comming as a Parameter GET in the URL</a></blockquote>
+
+    </section>
+  </div>
+  <div data-role="header">
+    <h1>CityAds implementation via third party services (Google Tag Manager)</h1>
+  </div>
+
+
+  <table align="center" border="1px" style="border:1px blue solid;">
   <thead style="background-color:#cbcbcb;">
   <tr>
     <th width="40%">Product</th>
@@ -64,37 +95,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </td>
     </tr>
   </tbody>
-</table>
-<form action="carrito_compra.php?product=<?php echo $product->getName();?>&price=<?php echo $product->getPrice(); ?>" method="post">
-  <div align="center">
-    Quantity: <input type="text" name="quantity" ><br>
-    <input type="submit" value="Add">
-  </div>
-</form>
+  </table>
+  <form action="carrito_compra.php?product=<?php echo $product->getName();?>&price=<?php echo $product->getPrice(); ?>" method="post">
+    <div align="center">
+      Quantity: <input type="text" name="quantity" ><br>
+      <input type="submit" value="Add Product to cart">
+    </div>
+  </form>
+  <a href="#myPanel" data-rel="popup" class="ui-btn  ui-corner-all ui-btn-icon-right ui-shadow">See CityAds js code embedded in this page</a>
 
-<section>
-  <blockquote>CityAds Script embedded no matter any source ID.
-    Note this script does not have to be embedded on Checkout, Product detail, nor Checkout and Thank You pages </blockquote>
-
-
-  <pre>
-    /* < ! [CDATA[*/
-      // Product detail page
-      var xcnt_product_id = '<?= $product->getName()?>'; // Product ID
-    /* ] ] >*/
-
-    (function(){
-      var xscr = document.createElement( 'script' );
-      var xcntr = escape(document.referrer); xscr.async = true;
-      xscr.src = ( document.location.protocol === 'https:' ? 'https:' : 'http:' ) + '//x.cnt.my/async/track/?r=' + Math.random();
-      var x = document.getElementById( 'xcntmyAsync' ); x.parentNode.insertBefore( xscr, x );
-    }());
-    See instructions on  <a href="#">GTM </a>
-  </pre>
-
-  <blockquote>An important step is to catch the GET parameter click_id and set it as cookie. Later on, it will be used on the thank you page.
-    Catch click_id in any page. See instructions on  <a href="#">GTM </a></blockquote>
-</section>
+</div>
 
 </body>
 </html>

@@ -57,14 +57,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </code></pre>
 
       <blockquote>An important step is to catch the GET parameter click_id and set it as cookie. Later on, it will be used on the thank you page.
-        Catch click_id in any page. See instructions on  <a href="#">GTM </a></blockquote>
+        Catch click_id in any page.</a></blockquote>
+
+    </section>
+  </div>
+  <div data-role="popup" id="myPanelPhp" data-position="right" >
+    <h2>If you are implenting CityAds script with PHP backend code. Just print it as is. </h2>
+    <section>
+      <blockquote>CityAds Script embedded no matter any source ID.
+        Note this script does not have to be embedded on Checkout, Product detail, nor Checkout and Thank You pages </blockquote>
+
+
+      <pre><code class="language-php">
+          < body>
+          <  ? php
+          ... PHP code
+          ? >
+            / * < ! [CDATA[ */
+            /* ] ] > */
+            (function(){
+            var xscr = document.createElement( 'script' );
+            var xcntr = escape(document.referrer); xscr.async = true;
+            xscr.src = ( document.location.protocol === 'https:' ? 'https:' : 'http:' ) + '//x.cnt.my/async/track/?r=' + Math.random();
+            var x = document.getElementById( 'xcntmyAsync' ); x.parentNode.insertBefore( xscr, x );
+            }());
+          < / body>
+
+        </code></pre>
+
+      <blockquote>An important step is to catch the GET parameter click_id and set it as cookie. Later on, it will be used on the thank you page.
+        Catch click_id in any page.</a></blockquote>
+
+    </section>
+  </div>
+  <div data-role="popup" id="myPanelGtm" data-position="right" >
+    <h2>Inserting Script via GTM </h2>
+    <section>
+      <blockquote>CityAds Script embedded no matter any source ID.
+        Note this script does not have to be embedded on Checkout, Product detail, nor Checkout and Thank You pages </blockquote>
+
+
+      <pre><code class="language-php">
+      To insert the CityAds script in this page request access to this page container follow the following link
+      </code></pre>
+      <a href="https://tagmanager.google.com/?hl=en#/container/accounts/157652638/containers/1842326/tags/1">https://tagmanager.google.com/?hl=en#/container/accounts/157652638/containers/1842326/tags/1</a>
+
+      <img width="50%" align="center" style="margin: auto" src="includes/images/cityads_all_pages.png"/>
+
+
+      <blockquote>An important step is to catch the GET parameter click_id and set it as cookie. Later on, it will be used on the thank you page.
+        Catch click_id in any page.</a></blockquote>
 
     </section>
   </div>
 
-  <div data-role="header">
-    <h1>CityAds implementation via third party services (Google Tag Manager)</h1>
-  </div>
 
   <div data-role="main" class="ui-content">
 
@@ -113,8 +159,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-    <a href="#myPanel" data-rel="popup" class="ui-btn  ui-corner-all ui-btn-icon-right ui-shadow">See backend Code</a>
-    <a href="#myPanel" data-rel="popup" class="ui-btn  ui-corner-all ui-btn-icon-right ui-shadow">See GTM example</a>
+    <a href="#myPanel" data-rel="popup" class="ui-btn  ui-corner-all ui-btn-icon-right ui-shadow">See CityAds tag embedded in this page</a>
+    <a href="#myPanelPhp" data-rel="popup" class="ui-btn  ui-corner-all ui-btn-icon-right ui-shadow">See PHP backend example</a>
+    <a href="#myPanelGtm" data-rel="popup" class="ui-btn  ui-corner-all ui-btn-icon-right ui-shadow">See GTM example</a>
   </div>
   <div data-role="footer">
     <h1>Team Molanco</h1>

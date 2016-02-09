@@ -33,7 +33,7 @@
   }
   $order_id = 1;
   $payment_method = 'Pago directo';
-  $currency = 'MX';
+  $currency = "MX";
   $basket = json_encode($lista_backend);
 ?>
   <!-- Google Tag Manager -->
