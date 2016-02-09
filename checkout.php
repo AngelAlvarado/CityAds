@@ -45,7 +45,7 @@
       'order_total' : '<?= number_format((float)$customer->getShoppingCart()->getTotal(), 2, '.', '') ?>', // Regresar el valor total del pedido usando siempre PUNTO para separar decimales
       'customer_type' : 'N', //Clocar variable qeu contenga este dato, este valor es de ejemplo
       'payment_method' : '<?= $payment_method ?>',//Cloar variable qeu contenga este dato, este valor es de ejemplo
-      'currency' : <?=  $currency ?>,//Clocar variable qeu contenga este dato, este valor es de ejemplo
+      'currency' : <?=  'MXN' ?>,//Clocar variable qeu contenga este dato, este valor es de ejemplo
       'coupon' : '<?= 0 ?>',//Clocar variable que contenga este dato, este valor es de ejemplo
       'discount': '<?= 0.0 ?>',
       'basket':'<?= $basket ?>'
