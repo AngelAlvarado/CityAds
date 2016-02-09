@@ -19,7 +19,7 @@ class ShoppingCart {
    * @return mixed
    */
   public function getTotal() {
-    $products = $this->getProducts;
+    $products = $this->getProducts();
     if(!$products){
       return;
     }
